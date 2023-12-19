@@ -30,6 +30,7 @@ body, html {
   }
 
   .welcome{
+    padding-top: 1.5%;
     text-align: center;
     color: #222;
     font-family: Cabin;
