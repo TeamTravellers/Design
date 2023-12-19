@@ -7,5 +7,6 @@ document.getElementById('yesButton').addEventListener('click', function() {
 });
 
 document.getElementById('noButton').addEventListener('click', function() {
-    window.location.href = 'sign-up.html';
+    window.location.href = 'sing-up.html'; // Replace with your desired URL
 });
+
