@@ -46,7 +46,7 @@ body{
     padding: 40px 32px;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    background-color: #e7e7e7;
+    background-color: transparent;
 }
 
 .container h1{
@@ -182,3 +182,47 @@ body{
 .container .links a:hover{
     text-decoration: underline;
 }
+
+.container form label[for="dropdown"] {
+    position: relative;
+    color: #1d1d1d;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    display: block;
+    margin-top: 12px;
+}
+
+.container form .custome-input.dropdown {
+    position: relative;
+}
+
+.container form .custome-input.dropdown select {
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 46px;
+    letter-spacing: 0.03rem;
+    border: 1px solid #1d1d1d;
+    background: transparent;
+    outline: none;
+    border-radius: 8px;
+    padding-right: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    padding-left: 20px;
+}
+
+.container form .custome-input.dropdown i {
+    position: absolute;
+    font-size: 24px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    color: #1d1d1d;
+}
+
