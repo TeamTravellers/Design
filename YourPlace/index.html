@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-home.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style-language.css">
     <title>YourPlace</title>
 </head>
+
 <body>
-        <header></header>
-        <div class="logo1">
-          <svg xmlns="http://www.w3.org/2000/svg" width="147" height="216" viewBox="0 0 147 216" fill="none">
-              <use href="logo.svg#logo"></use>
-          </svg>
-        </div>
-        <div class="container">
-          <div class="welcome">Welcome to</div>
-          <div class="yourplace">YourPlace</div>
-            <div class="info-container">
-              <div class="info">
-                We present to you our new app which aims to make your holiday decisions easier.
-                Tired of looking for best place for hours? Try our new app! 
-              </div>
-            </div>
-            <div class="button-container">
-              <button id="startButton" class="start">
-                  <div class="text-btn">Let's get started</div>
-              </button>
-            </div>
-          </div>
-        <script src="script-index.js"></script> 
+
+    <div class="logo">
+        <svg class="logo-svg">
+            <use xlink:href="logo.svg#logo"></use>
+        </svg>
+        <a href="index.html" class="logo-text">YourPlace</a>
+    </div>
+    
+    <div class="container">
+        <h1>Choose a language:</h1>
+        <h4>Изберете език:</h4>
+        <form>
+            <button id="english" class="login">English</button>
+            <button id="bulgarian" class="login">Български</button>
+        </form>
+    </div>
+    <script src="script-language.js"></script>
 </body>
-</html> 
+</html>
