@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/style-test.css">
+    <title>YourPlace</title>
+</head>
+<body>
+    <div class="logo">
+        <svg class="logo-svg">
+            <use xlink:href="logo.svg#logo"></use>
+        </svg>
+        <a href="index.html" class="logo-text">YourPlace</a>
+    </div>
+
+    <div class="container">
+        <div class="questions">
+            <form id="quizForm">
+                <div class="question" id="question1">
+                    <p>Question 1: What do you prefer?</p>
+                    <label>
+                        <input type="radio" name="question1" value="Sea">
+                        Sea
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="Mountain">
+                        Mountain
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="Large city">
+                        Large city
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="Small village">
+                        Small village
+                    </label>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question" id="question2" style="display: none;">
+                    <p>Question 2: What type of tourism you like?</p>
+                    <label>
+                        <input type="radio" name="question2" value="Culture">
+                        Culture
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="Shopping">
+                        Shopping
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="Adventure">
+                        Adventure
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="Relax">
+                        Relax
+                    </label>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question" id="question3" style="display: none;">
+                    <p>Question 3: What do you prefer?</p>
+                    <label>
+                        <input type="radio" name="question3" value="Calm">
+                        Calm
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value="Party">
+                        Party
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value="Both">
+                        Both
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value="Neither">
+                        Neither
+                    </label>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question" id="question4" style="display: none;">
+                    <p>Question 4: What type of trip are you looking for?</p>
+                    <label>
+                        <input type="radio" name="question4" value="Family">
+                        Family
+                    </label>
+                    <label>
+                        <input type="radio" name="question4" value="With one partner">
+                        With one partner
+                    </label>
+                    <label>
+                        <input type="radio" name="question4" value="Individual">
+                        Individual
+                    </label>
+                    <label>
+                        <input type="radio" name="question4" value="Group">
+                        Group
+                    </label>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question" id="question5" style="display: none;">
+                    <p>Question 5: What do you prefer?</p>
+                    <label>
+                        <input type="radio" name="question5" value="Luxury">
+                        Luxury
+                    </label>
+                    <label>
+                        <input type="radio" name="question5" value="Cheap">
+                        Cheap
+                    </label>
+                    <label>
+                        <input type="radio" name="question5" value="Something in between">
+                        Something in between
+                    </label>
+                    <label>
+                        <input type="radio" name="question5" value="Ultra lux">
+                        Ultra lux
+                    </label>
+                </div>
+
+                <button class="prev-btn" style="display: none;">Previous</button>
+                <button class="next-btn">Next</button>
+            </form>
+        </div>
+
+    <script src="scripts/script-test.js"></script>
+</body>
+</html>
