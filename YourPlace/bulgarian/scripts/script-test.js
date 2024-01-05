@@ -10,7 +10,7 @@ function showQuestion(index) {
     });
 
     prevButton.style.display = index === 0 ? 'none' : 'inline-block';
-    nextButton.textContent = index === questions.length - 1 ? 'Submit' : 'Next';
+    nextButton.textContent = index === questions.length - 1 ? 'Предай' : 'Следващ';
 }
 
 showQuestion(currentQuestion);
@@ -35,6 +35,6 @@ nextButton.addEventListener('click', (e) => {
             window.location.href = 'submit-page.html';
         }
     } else {
-        alert('Please select an answer before proceeding.');
+        alert('Моля изберете отговор.');
     }
 });

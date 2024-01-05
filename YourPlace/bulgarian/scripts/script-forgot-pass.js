@@ -7,7 +7,7 @@ document.getElementById('forgot-pass').addEventListener('click', function(event)
     if (newPassword === repeatPassword) {
         window.location.href = 'login.html';
     } else {
-        alert("Passwords do not match. Please re-enter.");
+        alert("Паролите трябва да съвпадат.");
         document.getElementById('new-password').value = '';
         document.getElementById('repeat-password').value = '';
     }
