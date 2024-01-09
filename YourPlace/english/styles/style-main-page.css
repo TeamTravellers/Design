@@ -12,8 +12,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #c9d6ff;
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+    flex-direction: row;
+    flex-wrap: wrap;
+    
 }
 
 .logo{
@@ -76,12 +78,16 @@ li{
     border-radius: 20px;
 }
 
+li button:hover{
+    text-decoration: underline;
+}
+
 button{
     width: 80px;
     height: fit-content;
+    border: 1px solid #6667b0;
     background: #6b43ff;
     color: #fff;
-    border: none;
     line-height: 50px;
     font-size: 18px;
     letter-spacing: 0.025em;
@@ -90,6 +96,11 @@ button{
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
+}
+
+
+.button:hover{
+    text-decoration: underline;
 }
 
 .underline1{
