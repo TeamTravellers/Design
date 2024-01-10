@@ -126,7 +126,6 @@ button{
     transition: all 0.3s ease;
 }
 
-
 .button:hover{
     text-decoration: underline;
 }
