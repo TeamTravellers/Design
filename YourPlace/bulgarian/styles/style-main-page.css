@@ -152,10 +152,8 @@ button{
     margin-left: 10px;
 }
 
-/* styles.css */
-/* Styles for the modal */
 .offerspop {
-    display: none;
+  display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -164,20 +162,28 @@ button{
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .offers-content {
+    display: flex;
+    flex-direction: row;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
-    border-radius: 8px; /* Rounded corners */
-    position: relative;
+    width: 70%;
+    border-radius: 8px;
+    position: fixed;
+    right: 5%;
+    overflow: auto;
 }
 
 .offers-text{
-    right: 0;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 .close {
@@ -197,26 +203,21 @@ button{
     cursor: pointer;
 }
 
-
-/* Position the image container (needed to position the left and right arrows) */
 .container-slideshow {
   position: relative;
   height: 30%;
-  width: 30%;
+  width: 40%;
   left: 0;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -233,28 +234,16 @@ button{
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
 .caption-container {
   text-align: center;
   background-color: #222;
@@ -268,13 +257,11 @@ button{
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
