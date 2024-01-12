@@ -112,7 +112,7 @@ li button:hover{
 }
 
 button{
-    width: 80px;
+    width: fit-content;
     height: fit-content;
     border: 1px solid #6667b0;
     background: #6b43ff;
@@ -184,7 +184,13 @@ button{
     width: 60%;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+}
+
+#offers {
+  display: none;
 }
 
 .close {

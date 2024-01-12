@@ -50,25 +50,20 @@ document.querySelector('.profile').addEventListener('click', () => {
     window.open('profile.html', '_blank');
 });
 
-
-// pop up
 const offersButton = document.querySelectorAll('.button');
 const modal = document.getElementById('offers');
 const closeButton = document.querySelector('.close');
 
-// pop up click
 offersButton.forEach(button => {
     button.addEventListener('click', () => {
         modal.style.display = 'block';
     });
 });
 
-// pop up close
 closeButton.addEventListener('click', () => {
     modal.style.display = 'none';
 });
 
-// outside close
 window.addEventListener('click', (event) => {
     if (event.target === modal) {
         modal.style.display = 'none';
