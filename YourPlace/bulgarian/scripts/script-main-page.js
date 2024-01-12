@@ -43,11 +43,11 @@ document.querySelector('.filter').addEventListener('click', () => {
 });
 
 document.querySelector('.map').addEventListener('click', () => {
-    window.open('map.html', '_blank');
+    window.open('https://www.google.com/maps', '_blank');
 });
 
 document.querySelector('.profile').addEventListener('click', () => {
-    window.open('profile.html', '_blank');
+    window.location.href='profile.html';
 });
 
 const offersButton = document.querySelectorAll('.button');
