@@ -89,6 +89,7 @@ header {
   flex-direction: column;
   transform: translateX(-50%);
   
+  
 }
 
 .info-container {
@@ -102,7 +103,7 @@ header {
 .button-container {
   position: absolute;
   left: calc(50% - -47.5px);
-  top: 520px;
+  top: 600px;
   width: 345px;
   height: 75px;
   border-radius: 20px;
