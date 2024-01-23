@@ -143,6 +143,8 @@ button{
 }
 
 .container{
+    display: flex;
+    flex-direction: row;
     padding: 40px 32px;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -152,3 +154,10 @@ button{
     margin-left: 10px;
 }
 
+.container-text{
+    margin-left: 20px;
+}
+
+.image{
+    
+}
