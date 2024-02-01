@@ -53,29 +53,6 @@ body{
     font-size: 1.6rem;
 }
 
-.container .social-login{
-    display: flex;
-    gap: 16px;
-    margin-top: 20px;
-}
-
-.container .social-login button{
-    padding: 8px;
-    width: 100%;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #323760;
-    border: 1px solid #6667b0;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
 .container .social-login button i{
     font-size: 26px;
 }
@@ -103,14 +80,4 @@ body{
 
 .container form .login:hover{
     background: #5222fd;
-}
-
-.container form label[for="dropdown"] {
-    position: relative;
-    color: #1d1d1d;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 0.03rem;
-    display: block;
-    margin-top: 12px;
 }
