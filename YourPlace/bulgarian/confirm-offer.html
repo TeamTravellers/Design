@@ -31,24 +31,24 @@
     <div class="row">
         <div class="container">
             <div class="container-text">
-                <h2>Rose Apartments</h2>
-                <p>Рим, Италия</p>
-                <p>9.6/10</p>
-                <p>The apartments are located on the beach and near the center of the city.</p><br>
+                <h2>Rose Garden</h2>
+                <p>Поморие, България</p>
+                <p>8.5/10</p>
+                <p>Апартаменти Роуз Гардънс се намират на 50 метра от плажа. Включват сезонен външен басейн и сезонен ресторант, безплатен Wi-Fi и сезонен спа център.</p><br>
 
-                <label for="date-from">From:</label>
+                <label for="date-from">От:</label>
                 <input class="date-input" type="date" id="date-from" min="" onchange="setMinDate('date-to', this.value)">
-                <label for="date-to">To:</label>
-                <input class="date-input" type="date" id="date-to" min="" onchange="setMaxDate('date-from', this.value)">
-
-                <label class="filter-label" for="num-of-people">Number of People:</label>
+                <label for="date-to">До:</label>
+                <input class="date-input" type="date" id="date-to" min="" onchange="setMaxDate('date-from', this.value)"> <br>
+<br>
+                <label class="filter-label" for="num-of-people">Брой хора:</label>
                 <div>
                     <button clsss="btn" onclick="changeNumberOfPeople(-1)">-</button>
                     <input class="number-input" type="number" id="num-of-people" value="1">
                     <button clsss="btn" onclick="changeNumberOfPeople(1)">+</button>
                 </div>
 
-                <p>Price: </p>
+                <p>Цена:  <label for="price"> 1000 лв. </label> </p> <br>
                 <p><button id="book" class="button">Резервирай</button></p>
             </div>
         </div>
