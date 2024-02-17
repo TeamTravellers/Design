@@ -158,8 +158,8 @@ button{
         top: 70px;
         left: 50%;
         transform: translateX(-50%);
-        width: 30%;
-        background-color: gray;
+        width: 60%;
+        background-color: rgb(151, 150, 184);
         border-radius: 8px;
         z-index: 1000;
         padding: 10px;
