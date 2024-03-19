@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/style-hotel-manager.css">
+    <title>YourPlace</title>
+</head>
+
+<body>
+
+    <div class="logo">
+        <svg class="logo-svg">
+            <use xlink:href="logo.svg#logo"></use>
+        </svg>
+        <a href="index.html" class="logo-text">YourPlace</a>
+    </div>
+    
+    <div class="container" id="rooms-container"> <!-- Added id="rooms-container" -->
+        <h1>Създаване на хотел</h1>
+        <form>
+            <label for="email">Име на хотела:</label>
+            <div class="custome-input">
+                <input type="text" name="hotelName" placeholder="Име на хотела" autocomplete="off">
+            </div>
+            <label for="email">Местоположение:</label>
+            <div class="custome-input">
+                <input type="text" name="location" placeholder="Местоположение" autocomplete="off">
+            </div>
+            <label for="email">Град:</label>
+            <div class="custome-input">
+                <input type="text" name="city" placeholder="Град" autocomplete="off">
+            </div>
+            <label for="password">Държава:</label>
+            <div class="custome-input">
+                <input type="text" name="country" placeholder="Държава">
+            </div>
+            <label for="password">Рейтинг:</label>
+            <div class="custome-input">
+                <input type="text" name="rating" placeholder="Рейтинг">
+            </div>
+            <label for="password">Описание:</label>
+            <div class="custome-input">
+                <input type="text" name="description" placeholder="Описание">
+            </div>
+            <div class="checks">
+                <input type="checkbox" name="perfs" id="perfs-checkbox"> 
+                <span>Разрешени животни</span>
+            </div>            
+        </form>
+
+        <div class="rooms"> <!-- Moved room section outside of the form -->
+            <div class="room">
+                <input type="text" class="room-name" placeholder="Room Name">
+                <select class="room-type">
+                  <option value="bedroom">Bedroom</option>
+                  <option value="living-room">Living Room</option>
+                  <option value="kitchen">Kitchen</option>
+                  <option value="bathroom">Bathroom</option>
+                </select>
+            </div>
+        </div>
+        
+        <button id="add-room-btn" class="login">Add New Room</button>
+        <button id="signup" class="login">Създаване на хотел</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const addRoomBtn = document.getElementById('add-room-btn');
+            const roomsContainer = document.querySelector('.rooms'); // Changed to select the room container
+
+            addRoomBtn.addEventListener('click', function() {
+                const newRoom = document.createElement('div');
+                newRoom.classList.add('room');
+
+                const roomNameInput = document.createElement('input');
+                roomNameInput.type = 'text';
+                roomNameInput.classList.add('room-name');
+                roomNameInput.placeholder = 'Room Name';
+
+                const roomTypeSelect = document.createElement('select');
+                roomTypeSelect.classList.add('room-type');
+                const roomTypes = ['Bedroom', 'Living Room', 'Kitchen', 'Bathroom'];
+                roomTypes.forEach(function(type) {
+                    const option = document.createElement('option');
+                    option.value = type.toLowerCase().replace(' ', '-');
+                    option.textContent = type;
+                    roomTypeSelect.appendChild(option);
+                });
+
+                newRoom.appendChild(roomNameInput);
+                newRoom.appendChild(roomTypeSelect);
+                roomsContainer.appendChild(newRoom);
+            });
+        });
+    </script>
+</body>
+
+</html>
