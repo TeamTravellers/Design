@@ -43,10 +43,11 @@
             </div>
             <label for="password">Описание:</label>
             <div class="custome-input">
-                <input type="text" name="description" placeholder="Описание">
+            <textarea name="description" placeholder="Описание" id="description"></textarea>
             </div>
+            <label for="photo">Качване на снимка:</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
 
-            <h1> snimka </h1> <h3> upload ph</h3>
             <br>
             <div class="preferences">
                 <div class="checks">
@@ -109,7 +110,7 @@
         </div>       
         </form>
         
-        <button id="add-room-btn" class="login">Add New Room</button>
+        <button id="add-room-btn" class="login">Добавяне на стая</button>
         <button id="signup" class="login">Създаване на хотел</button>
     </div>
 

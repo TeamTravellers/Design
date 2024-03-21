@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
 }
 
-body{
+body {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@ body{
     background: linear-gradient(to right, #e2e2e2, #c9d6ff);
 }
 
-.logo{
+.logo {
     position: absolute;
     top: 22px;
     left: 22px;
@@ -33,7 +33,7 @@ body{
     left: 0;
 }
 
-.logo a{
+.logo a {
     font-size: 35px;
     font-weight: bold;
     text-decoration: none;
@@ -41,28 +41,28 @@ body{
     padding-left: 50px;
 }
 
-.container{
+.container {
     display: grid;
-    position: fixed;  
+    position: relative;
     width: 60%;
     padding: 40px 32px;
     border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     background-color: transparent;
-    overflow:auto;
+    overflow: auto;
 }
 
-.container h1{
+.container h1 {
     font-size: 1.6rem;
 }
 
-.container .social-login{
+.container .social-login {
     display: flex;
     gap: 16px;
     margin-top: 20px;
 }
 
-.container .social-login button{
+.container .social-login button {
     padding: 8px;
     width: 100%;
     border-radius: 8px;
@@ -79,22 +79,22 @@ body{
     transition: all 0.3s ease;
 }
 
-.container .social-login button i{
+.container .social-login button i {
     font-size: 26px;
 }
 
-.container .social-login button:hover{
+.container .social-login button:hover {
     color: #6b43ff;
     border-color: #6b43ff;
 }
 
-.container .divider{
+.container .divider {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.container .divider .line{
+.container .divider .line {
     height: 1px;
     width: 100%;
     background: #1d1d1d;
@@ -102,7 +102,7 @@ body{
     margin: 30px 0 16px;
 }
 
-.container form label{
+.container form label {
     color: #1d1d1d;
     font-size: 14px;
     font-weight: bold;
@@ -112,35 +112,34 @@ body{
     width: 50%;
     float: left;
     text-align: left;
-    
 }
 
-.container form .custome-input{
+.container form .custome-input {
     position: relative;
     width: 50%;
     float: left;
 }
 
-.container form .custome-input input{
+.container form .custome-input input {
     color: #1d1d1d;
     font-size: 16px;
     font-weight: 500;
-    width: calc(100% - 20px); /* Adjust input width to accommodate padding */
+    width: calc(100% - 20px);
     height: 46px;
     letter-spacing: 0.03rem;
     border: 1px solid #1d1d1d;
     background: transparent;
     outline: none;
     border-radius: 8px;
-    padding-left: 20px; /* Add left padding */
+    padding-left: 20px;
     transition: all 0.3s ease;
 }
 
-.container form .custome-input input:focus{
+.container form .custome-input input:focus {
     border-color: #5222fd;
 }
 
-.container form .custome-input i{
+.container form .custome-input i {
     position: absolute;
     font-size: 28px;
     right: 10px;
@@ -148,11 +147,13 @@ body{
     transition: all 0.3s ease;
 }
 
-.container form .custome-input input:focus + i{
+.container form .custome-input input:focus + i {
     color: #5222fd;
 }
 
-.container .login{
+.login {
+    display: block;
+    margin-top: 20px;
     width: 50%;
     background: #6b43ff;
     color: #fff;
@@ -167,17 +168,17 @@ body{
     transition: all 0.3s ease;
 }
 
-.container form .login:hover{
+.login:hover {
     background: #5222fd;
 }
 
-.container .links{
+.container .links {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-.container .links a{
+.container .links a {
     color: #6b43ff;
     font-weight: 600;
     font-size: 1rem;
@@ -186,7 +187,7 @@ body{
     text-decoration-color: #6b43ff;
 }
 
-.container .links a:hover{
+.container .links a:hover {
     text-decoration: underline;
 }
 
@@ -203,7 +204,7 @@ body{
 .container form .custome-input.dropdown {
     position: relative;
     width: 50%;
-    float: right; 
+    float: right;
 }
 
 .container form .custome-input.dropdown select {
@@ -234,9 +235,27 @@ body{
     color: #1d1d1d;
 }
 
-.preferences{
+.preferences {
     display: flex;
     width: 200%;
     flex-direction: column;
     align-content: space-around;
+}
+
+#description {
+    width: 100%;
+    min-height: 100px;
+    resize: vertical;
+}
+
+#add-room-btn,
+#signup {
+    width: 200px;
+    margin: 10px auto;
+}
+
+form {
+    flex: 1;
+    overflow-y: auto;
+    padding
 }
