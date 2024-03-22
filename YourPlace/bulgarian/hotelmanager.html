@@ -20,98 +20,102 @@
     
     <div class="container" id="rooms-container"> <!-- Added id="rooms-container" -->
         <h1>Създаване на хотел</h1>
-        <form>
-            <label for="email">Име на хотела:</label>
-            <div class="custome-input">
-                <input type="text" name="hotelName" placeholder="Име на хотела" autocomplete="off">
-            </div>
-            <label for="email">Местоположение:</label>
-            <div class="custome-input">
-                <input type="text" name="location" placeholder="Местоположение" autocomplete="off">
-            </div>
-            <label for="email">Град:</label>
-            <div class="custome-input">
-                <input type="text" name="city" placeholder="Град" autocomplete="off">
-            </div>
-            <label for="password">Държава:</label>
-            <div class="custome-input">
-                <input type="text" name="country" placeholder="Държава">
-            </div>
-            <label for="password">Рейтинг:</label>
-            <div class="custome-input">
-                <input type="text" name="rating" placeholder="Рейтинг">
-            </div>
-            <label for="password">Описание:</label>
-            <div class="custome-input">
-            <textarea name="description" placeholder="Описание" id="description"></textarea>
-            </div>
-            <label for="photo">Качване на снимка:</label>
-            <input type="file" id="photo" name="photo" accept="image/*">
-
-            <br>
-            <div class="preferences">
-                <div class="checks">
-                    <input type="checkbox" name="perfs" id="perfs-checkbox"> 
-                    <span>Разрешени животни</span>
+        <div class="form-container">
+            <form>
+                <label for="email">Име на хотела:</label>
+                <div class="custome-input">
+                    <input type="text" name="hotelName" placeholder="Име на хотела" autocomplete="off">
                 </div>
-                <br>    
-                <div class="custome-input dropdown">
-                    <select id="dropdown" name="dropdown">
-                        <option hidden> Хотелът се намира в близост до: </option>
-                        <option value="option2">Море</option>
-                        <option value="option3">Планина</option>
-                        <option value="option4">Голям град</option>
-                        <option value="option5">Село</option>
-                    </select>
+                <label for="email">Местоположение:</label>
+                <div class="custome-input">
+                    <input type="text" name="location" placeholder="Местоположение" autocomplete="off">
                 </div>
+                <label for="email">Град:</label>
+                <div class="custome-input">
+                    <input type="text" name="city" placeholder="Град" autocomplete="off">
+                </div>
+                <label for="password">Държава:</label>
+                <div class="custome-input">
+                    <input type="text" name="country" placeholder="Държава">
+                </div>
+                <label for="password">Рейтинг:</label>
+                <div class="custome-input">
+                    <input type="text" name="rating" placeholder="Рейтинг">
+                </div>
+                <label for="password">Описание:</label>
+                <div class="custome-input">
+                <textarea name="description" placeholder="Описание" id="description"></textarea>
+                </div>
+                <label for="photo">Качване на снимка:</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+    
                 <br>
-                <div class="custome-input dropdown">
-                    <select id="dropdown" name="dropdown">
-                        <option hidden> Тип почивка, която хората могат да намерят в хотела или околностите: </option>
-                        <option value="option2">Култура</option>
-                        <option value="option3">Пазаруване</option>
-                        <option value="option4">Приключение</option>
-                        <option value="option5">Релакс</option>
-                    </select>
-                </div>
-                <br>
-                <div class="custome-input dropdown">
-                    <select id="dropdown" name="dropdown">
-                        <option hidden> Хотелът е подходящ за почивка тип: </option>
-                        <option value="option2">Спокойствие</option>
-                        <option value="option3">Парти</option>
-                        <option value="option4">И двете</option>
-                        <option value="option5">Нито едното</option>
-                    </select>
-                </div>
-                <br>
-                <div class="custome-input dropdown">
-                    <select id="dropdown" name="dropdown">
-                        <option hidden> Хотелът е: </option>
-                        <option value="option2">Лукосозен</option>
-                        <option value="option3">Бюджетен</option>
-                        <option value="option4">Модерен</option>
-                    </select>
-                </div>
-            </div>
-            <div class="rooms">
-                <div class="room">
+                <div class="preferences">
+                    <div class="checks">
+                        <input type="checkbox" name="perfs" id="perfs-checkbox"> 
+                        <span>Разрешени животни</span>
+                    </div>
+                    <br>    
+                    <div class="custome-input dropdown">
+                        <select id="dropdown" name="dropdown">
+                            <option hidden> Хотелът се намира в близост до: </option>
+                            <option value="option2">Море</option>
+                            <option value="option3">Планина</option>
+                            <option value="option4">Голям град</option>
+                            <option value="option5">Село</option>
+                        </select>
+                    </div>
                     <br>
-                    <h4>Добавете стаи в хотела:</h4>
-                    <input type="text" class="room-name" placeholder="Room Name">
-                    <select class="room-type">
-                      <option value="room1">room1</option>
-                      <option value="room2">room2</option>
-                      <option value="room3">room3</option>
-                      <option value="room4">room4</option>
-                    </select>
+                    <div class="custome-input dropdown">
+                        <select id="dropdown" name="dropdown">
+                            <option hidden> Тип почивка, която хората могат да намерят в хотела или околностите: </option>
+                            <option value="option2">Култура</option>
+                            <option value="option3">Пазаруване</option>
+                            <option value="option4">Приключение</option>
+                            <option value="option5">Релакс</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="custome-input dropdown">
+                        <select id="dropdown" name="dropdown">
+                            <option hidden> Хотелът е подходящ за почивка тип: </option>
+                            <option value="option2">Спокойствие</option>
+                            <option value="option3">Парти</option>
+                            <option value="option4">И двете</option>
+                            <option value="option5">Нито едното</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div class="custome-input dropdown">
+                        <select id="dropdown" name="dropdown">
+                            <option hidden> Хотелът е: </option>
+                            <option value="option2">Лукосозен</option>
+                            <option value="option3">Бюджетен</option>
+                            <option value="option4">Модерен</option>
+                        </select>
+                    </div>
                 </div>
-            </div>  
-        </div>       
-        </form>
-        
-        <button id="add-room-btn" class="login">Добавяне на стая</button>
-        <button id="signup" class="login">Създаване на хотел</button>
+                <div class="rooms">
+                    <div class="room">
+                        <br>
+                        <h4>Добавете стаи в хотела:</h4>
+                        <input type="text" class="room-name" placeholder="Room Name">
+                        <select class="room-type">
+                          <option value="room1">room1</option>
+                          <option value="room2">room2</option>
+                          <option value="room3">room3</option>
+                          <option value="room4">room4</option>
+                        </select>
+                    </div>
+                </div>  
+            </div>       
+            </form>
+            
+            <div class="buttons-form">
+                <button id="add-room-btn" class="login">Добавяне на стая</button>
+                <button id="signup" class="login">Създаване на хотел</button>
+            </div>
+        </div>
     </div>
 
     <script>

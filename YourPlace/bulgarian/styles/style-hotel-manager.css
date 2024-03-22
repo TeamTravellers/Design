@@ -256,6 +256,14 @@ body {
 
 form {
     flex: 1;
-    overflow-y: auto;
-    padding
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-form{
+    display: flex;
+    flex-direction: row;
 }
